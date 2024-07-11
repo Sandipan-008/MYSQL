@@ -1,4 +1,4 @@
-                                                                   --   Creation of Database
+                                                                   --  Creation of Database
 
 syntyx:   create database database_name;
 example:  create database Office;
