@@ -9,7 +9,7 @@ example:  create database Office;
 syntyx: show databases
 
 
-                                                                      Deleting of databse
+                                                                      Deleting of Databse
 
 syntyx:    drop database database_name;
 example:   drop database Office;
