@@ -39,7 +39,7 @@ example: INSERT INTO Office
 
                                                              -- INSERTING COLUMN
 SYNTYX:  ALTER TABLE table_name
-         ADD column_name datatype; 
+         ADD column_name datatype(length); 
 example: alter table Office
          add gender varchar(6);
 
