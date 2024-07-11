@@ -44,7 +44,7 @@ example: alter table Office
          add gender varchar(6);
 
 
-                                                              -- INSERTING COLUMN
+                                                              -- DELETING COLUMN
 
 SYNTYX:  ALTER TABLE table_name
          drop column column name;
