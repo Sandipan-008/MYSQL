@@ -27,14 +27,7 @@ SYNTYX:  drop table table_name;
 example: drop table Office;
 
 
-                                                              -- INSERTING ROW
 
-SYNTYX:  INSERT INTO table_name
-         VALUES
-         (value1, value2, value3);
-example: INSERT INTO Office
-         VALUES
-         (4,'shyam','kolkata','564737299','60000','2001-08-09');
 
 
                                                              -- INSERTING COLUMN
