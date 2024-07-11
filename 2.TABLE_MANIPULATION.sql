@@ -14,9 +14,8 @@ example:  create table Office(
           dob date
           )
 
-
                                                               -- TABLE DISPLAY
-
+  
 SYNTYX:  select * from table_name;
 example: select * from Office;
 
@@ -27,23 +26,41 @@ SYNTYX:  drop table table_name;
 example: drop table Office;
 
 
+                                                              -- TABLE RENAMING
 
+SYNTYX:   ALTER TABLE old_table_name RENAME new_table_name;
+example:  alter table Office RENAME Office2;
+
+
+                                                             -- TABLE DUPLICATING
+
+SYNTYX:    create table clone_table like origina;_table;
+ example:  create table xyz like Office;
+
+
+-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
 
 
                                                              -- INSERTING COLUMN
+
 SYNTYX:  ALTER TABLE table_name
          ADD column_name datatype(length); 
 example: alter table Office
          add gender varchar(6);
 
-
                                                               -- DELETING COLUMN
 
 SYNTYX:  ALTER TABLE table_name
          drop column column name;
-
 example: alter table SQL1
          drop column gender;
+
+                                                              -- RENAMING COLUMN
+
+SYNTYX:  ALTER TABLE table_name
+         change old_column_name new_column_name datatype(length) constriant;
+exp:     ALTER TABLE Office
+         CHANGE gender gen VARCHAR(3) NOT NULL;
 
 
 
