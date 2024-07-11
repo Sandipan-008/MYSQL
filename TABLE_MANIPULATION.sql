@@ -1,11 +1,10 @@
                                                             -- TABLE CREATION 
 
-syntyx:  CREATE TABLE table_name (
+SYNTYX:  CREATE TABLE table_name (
     column1 datatype (length),
     column2 datatype (length),
     column3 datatype (length),
     );
-
 example:  create table Office(
           id int,
           name varchar(100),
