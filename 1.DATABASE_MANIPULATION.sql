@@ -10,15 +10,19 @@ syntyx: show databases;
 syntyx: show database like  'database_name%';
 example: show database like  'Office%';
 
-
-                                                                   --   Deleting of Database
+                                                                   -- Deleting the database
+                                                                   
 syntyx:    drop database database_name;
 example:   drop database Office;
 
 
-                                                                  --   Renaming Database
+                                                                  --  Exporting data from one to another database
 
-ALTER DATABASE OldDatabaseName MODIFY NAME = NewDatabaseName;
+CREATE DATABASE srk;
+mysqldump -u username -p smd > smd_backup.sql;
+mysql -u username -p srk < smd_backup.sql;
+DROP DATABASE smd;
+
 
 
 
