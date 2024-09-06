@@ -28,9 +28,11 @@ DROP DATABASE smd;
 
                                                                   --  Duplicating Database
 
-                                                
+-- create a new database                                                   
 CREATE DATABASE new_db_name;
+-- create a duplicate table like table in old database
 CREATE TABLE new_db_name.table_name LIKE original_db_name.table_name;
+-- insert/copying all the data from table in old database
 INSERT INTO new_db_name.table_name SELECT * FROM original_db_name.table_name;
 
 -- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>..............
