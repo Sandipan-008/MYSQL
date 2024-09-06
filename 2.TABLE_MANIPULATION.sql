@@ -1,4 +1,4 @@
-                                                            -- TABLE CREATION 
+ampl                                                            -- TABLE CREATION 
 
 SYNTYX:  CREATE TABLE table_name (
          column1 datatype (length) not null primary key,
@@ -19,7 +19,7 @@ example:  create table Office(
 SYNTYX:  select * from table_name;
 example: select * from Office;
 (to display the table structure)
-DESCRIBE Office;
+example: DESCRIBE Office;
 
                                                               -- TABLE DELETION
 
