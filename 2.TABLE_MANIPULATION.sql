@@ -34,7 +34,7 @@ example:  alter table Office RENAME Office2;
 
                                                              -- TABLE DUPLICATING
 
-SYNTYX:    create table clone_table like origina;_table;
+SYNTYX:    create table clone_table like original_table;
  example:  create table xyz like Office;
 
 
@@ -64,6 +64,12 @@ exp:     ALTER TABLE Office
 
 
 
+                                                              -- Change Datatype
+
+SYNTYX: ALTER TABLE table_name MODIFY column column_name updated_data_type;
+
+exp_1: ALTER TABLE order_datails MODIFY COLUMN quantity int ;
+exp_2: ALTER TABLE orders MODIFY COLUMN order_date date ;
 
 
 
