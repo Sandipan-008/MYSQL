@@ -22,5 +22,8 @@ ALTER DATABASE OldDatabaseName MODIFY NAME = NewDatabaseName;
                                                                   --  Duplicating Database
 
                                                 
+CREATE DATABASE new_db_name;
+CREATE TABLE new_db_name.table_name LIKE original_db_name.table_name;
+INSERT INTO new_db_name.table_name SELECT * FROM original_db_name.table_name;
 
 -- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>..............
