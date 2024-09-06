@@ -4,6 +4,9 @@ example:  create database Office;
 
 
                                                                    --  Displaying of Database
+
+syntyx: show databases;
+
 syntyx: show database like  'database_name%';
 example: show database like  'Office%';
 
