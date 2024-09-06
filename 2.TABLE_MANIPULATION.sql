@@ -1,9 +1,9 @@
                                                             -- TABLE CREATION 
 
 SYNTYX:  CREATE TABLE table_name (
-         column1 datatype (length),
-         column2 datatype (length),
-         column3 datatype (length),
+         column1 datatype (length) not null primary key,
+         column2 datatype (length) not null,
+         column3 datatype (length) not null
           );
 example:  create table Office(
           id int,
@@ -18,7 +18,8 @@ example:  create table Office(
   
 SYNTYX:  select * from table_name;
 example: select * from Office;
-
+(to display the table structure)
+DESCRIBE Office;
 
                                                               -- TABLE DELETION
 
