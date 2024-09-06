@@ -17,10 +17,13 @@ example:   drop database Office;
 
 
                                                                   --  Exporting data from one to another database
-
+-- Create the new database
 CREATE DATABASE srk;
+-- Export the old database
 mysqldump -u username -p smd > smd_backup.sql;
+-- Import the data into the new database
 mysql -u username -p srk < smd_backup.sql;
+-- Drop the old database 
 DROP DATABASE smd;
 
 
