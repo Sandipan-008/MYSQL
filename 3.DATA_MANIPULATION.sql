@@ -11,3 +11,6 @@ example: INSERT INTO Office
 
                                                               -- DELETING ROW/DATA
 
+SYNTYX: DELETE FROM table_name WHERE condition;
+
+
