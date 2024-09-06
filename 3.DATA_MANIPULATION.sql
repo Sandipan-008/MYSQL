@@ -14,3 +14,5 @@ example: INSERT INTO Office
 SYNTYX: DELETE FROM table_name WHERE condition;
 
 
+
+
