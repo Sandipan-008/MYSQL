@@ -36,9 +36,14 @@ WHERE department = 'IT' AND experience > 5;
 
                                                               -- DUPLICATING ROW/DATA
 
-INSERT INTO table_name (column1, column2, column3, ...)
+SYNTYX: INSERT INTO table_name (column1, column2, column3, ...)
 SELECT column1, column2, column3, ...
 FROM table_name
 WHERE condition;
+
+example: INSERT INTO employees (name, department, salary)
+SELECT name, department, salary
+FROM employees
+WHERE department = 'Sales';
 
 
