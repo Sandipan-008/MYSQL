@@ -31,3 +31,14 @@ UPDATE employees
 SET salary = 80000
 WHERE department = 'IT' AND experience > 5;
 
+
+
+
+                                                              -- DUPLICATING ROW/DATA
+
+INSERT INTO table_name (column1, column2, column3, ...)
+SELECT column1, column2, column3, ...
+FROM table_name
+WHERE condition;
+
+
