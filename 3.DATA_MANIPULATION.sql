@@ -34,7 +34,7 @@ WHERE department = 'IT' AND experience > 5;
 
 
 
-                                                              -- DUPLICATING ROW/DATA
+                                                              -- DUPLICATING ROW/DATA(SAME TABLE)
 
 SYNTYX: INSERT INTO table_name (column1, column2, column3, ...)
 SELECT column1, column2, column3, ...
@@ -45,5 +45,20 @@ example: INSERT INTO employees (name, department, salary)
 SELECT name, department, salary
 FROM employees
 WHERE department = 'Sales';
+
+
+
+                                                                -- DUPLICATING ROW/DATA(ANOTHER TABLE)
+
+
+SYNTYX: INSERT INTO target_table (column1, column2, column3, ...)
+SELECT column1, column2, column3, ...
+FROM source_table
+WHERE condition;
+
+example: INSERT INTO employees_archive (name, department, salary)
+SELECT name, department, salary
+FROM employees
+WHERE department = 'HR';
 
 
