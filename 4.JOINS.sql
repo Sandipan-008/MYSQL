@@ -37,3 +37,21 @@ on sc.roll_no = s.roll_no
 
 SQL SELF JOIN
 
+
+
+
+                                                   -- SQL CROSS JOIN
+
+                                                   -- SQL SELF JOIN
+
+                                                    -- SQL NATURAL JOIN
+
+
+
+
+
+
+
+
+
+
