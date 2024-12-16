@@ -38,6 +38,14 @@ example:  alter table Office RENAME Office2;
 SYNTYX:    create table clone_table like original_table;
  example:  create table xyz like Office;
 
+                                                             -- TABLE DUPLICATING (Table with data)
+
+SYNTYX: CREATE TABLE new_table_name AS 
+        SELECT * FROM existing_table_name;
+example: CREATE TABLE employees_backup AS 
+         SELECT * FROM employees;
+
+
 
 -- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
 
