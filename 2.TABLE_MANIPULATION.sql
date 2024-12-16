@@ -36,7 +36,7 @@ example:  alter table Office RENAME Office2;
                                                              -- TABLE DUPLICATING (Empty Table)
 
 SYNTYX:    create table clone_table like original_table;
- example:  create table xyz like Office;
+ example:  create table Office_2 like Office;
 
 
                                                              -- TABLE DUPLICATING (Table with data)
