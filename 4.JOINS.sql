@@ -28,7 +28,7 @@ table sc = roll_no, course_id
 
 query:
 select s.name, sc.course_id
-from s LEFT JOIN sc
+from s RIGHT JOIN sc
 on sc.roll_no = s.roll_no
 
 
