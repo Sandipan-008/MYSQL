@@ -62,3 +62,18 @@ FROM employees
 WHERE department = 'HR';
 
 
+
+                                                               -- DUPLICATING ROW/DATA DURING MODIFICATION (SAME TABLE)
+
+
+INSERT INTO table_name (column1, column2, column3, ...)
+SELECT column1, column2, 'New Value' AS column3, ...
+FROM table_name
+WHERE condition;
+
+INSERT INTO employees (name, department, salary)
+SELECT name, 'Marketing' AS department, salary * 1.1 AS salary
+FROM employees
+WHERE department = 'Sales';
+
+
