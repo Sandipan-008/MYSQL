@@ -35,16 +35,19 @@ on sc.roll_no = s.roll_no
   
                                                   --SQL OUTER JOIN (FULL)
 
-SQL SELF JOIN
 
 
 
-
-                                                   -- SQL CROSS JOIN
 
                                                    -- SQL SELF JOIN
 
-                                                    -- SQL NATURAL JOIN
+                                                   -- SQL CROSS JOIN
+
+                                                   -- SQL NATURAL JOIN
+
+                                                   -- SQL ANTI JOIN
+
+                                                   -- SQL SEMI JOIN
 
 
 
