@@ -1,4 +1,4 @@
-
+JOIN = CROSS_PRODUCT + CONDITION
                                                   --SQL INNER JOIN
 table s = roll_no, name, address, phone_no, age
 table sc = roll_no, course_id
