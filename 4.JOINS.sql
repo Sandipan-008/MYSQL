@@ -48,7 +48,7 @@ where T1.sid = T2.sid AND T1.cid <> T2.cid;
                                                    -- SQL CROSS JOIN
 
                                                    -- SQL NATURAL JOIN
-example: SELECT name from
+example: SELECT name, marks from
 STUDNET Natural join MARKS;
 where STUDENT.roll_no = MARKS.roll_no;
 
